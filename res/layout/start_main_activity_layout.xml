@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:background="@drawable/bg"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" >
+
+  <!-- Header aligned to top -->
+  <RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:gravity="center" >
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:paddingTop="20dp"
+      android:text="Welcome to BaboApp!"
+      android:textColor="#40807d"
+      android:textSize="20sp" />
+  </RelativeLayout>
+
+  <!-- Footer aligned to bottom -->
+  <LinearLayout
+      	android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#555555"
+        android:layout_alignParentBottom="true"
+         >
+      <View 
+          android:layout_width="match_parent"
+          android:layout_height="5dp"
+          android:background="#40807d"
+          />
+      <Button 
+          android:id="@+id/register_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Register"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          />
+        
+    </LinearLayout>
+
+  <!-- Scrollable Item below header and above footer -->
+  <ScrollView
+    android:id="@+id/scrollableContents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@id/footer"
+    android:layout_below="@id/header" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+         >
+	
+    <ImageView 
+        android:id="@+id/startlogo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="Wellcome to Babo App!"
+        android:src="@drawable/start_img"
+        android:layout_marginBottom="20dp"
+        
+        />
+    <TextView 
+        android:id="@+id/descr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free App with the services to satify your needs "
+        android:layout_marginBottom="20dp"    
+		/>
+    <EditText 
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="phone"
+        android:focusable="false"
+        />
+    <TextView 
+        android:id="@+id/terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:layout_marginBottom="20dp"
+            
+		/>
+    </LinearLayout>
+
+  </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Babo App</string>
+    <string name="start">WELCOME</string>
+    <string name="home_name">VIEW</string>
+    <string name="register_name">REGISTRATION</string>
+    <string name="report_name">HISTORY</string>
+    <string name="activity_name_ics">Preview ICS</string>
+    <string name="action_label_refresh">Refresh</string>
+    <string name="action_label_search">Search</string>
+    <string name="action_label_both">Both</string>
+    <string name="action_label_text">Babo up!</string>
+    <string name="action_label_logo">Logo</string>
+    <string name="action_label_up">Up</string>
+    <string name="action_label_nav_tabs">Tabs</string>
+    <string name="action_label_nav_drop_down">List</string>
+    <string name="action_label_nav_label">Label</string>
+    <string name="action_label_nav">Navigation Mode</string>
+    <string name="action_label_bak">Action Bar Background &gt;</string>
+    <string name="action_label_bak_none">None</string>
+    <string name="action_label_bak_gradient">Gradient</string>
+    <string name="action_label_bak_image">Image</string>
+</resources>

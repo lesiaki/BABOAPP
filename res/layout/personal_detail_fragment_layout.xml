@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" >
+
+  <!-- Header aligned to top -->
+  <RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:background="#eee"
+    android:paddingBottom="10dp"
+     >
+
+   	<ImageView 
+   	    android:layout_width="100dp"
+   	    android:layout_height="100dp"
+   	    android:src="@drawable/ic_action_person"
+   	    android:id="@+id/person_image_detail"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_alignParentTop="true"
+   	    android:background="#bbb"
+   	    android:layout_margin="5dp"
+   	    />
+   	<TextView 
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_toLeftOf="@id/person_image_detail"
+   	    android:text="5Km From You"
+   	    android:padding="5dp"
+   	    android:id="@+id/distance"
+   	    android:textSize="14sp"
+	    android:gravity="center_vertical"
+   	    />
+   	<TextView 
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_toLeftOf="@id/person_image_detail"
+   	    android:layout_below="@id/distance"
+   	    android:text="500 Requested"
+   	    android:padding="5dp"
+   	    android:id="@+id/request"
+   	    android:textSize="14sp"
+	    android:gravity="center_vertical"
+   	    />
+   	<TextView 
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_toLeftOf="@id/person_image_detail"
+   	    android:layout_below="@id/request"
+   	    android:text="458 Accepted"
+   	    android:padding="5dp"
+   	    android:id="@+id/accept"
+   	    android:textSize="14sp"
+	    android:gravity="center_vertical"
+   	    />
+  </RelativeLayout>
+
+  <!-- Footer aligned to bottom -->
+  <LinearLayout
+      	android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#555555"
+        android:layout_alignParentBottom="true"
+         >
+      
+        
+    </LinearLayout>
+
+  <!-- Scrollable Item below header and above footer -->
+  <ScrollView
+    android:id="@+id/scrollableContents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@id/footer"
+    android:layout_below="@id/header" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+         >
+        <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Fullname"
+	    android:textSize="14sp"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:layout_marginTop="10dp"
+	    android:textColor="#be83db"
+	    />
+         <View 
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#be83db"
+          android:layout_marginTop="1dp"
+          android:layout_marginBottom="2dp"
+           android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          />
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Fullname"
+	    android:id="@+id/person_name"
+	    android:textSize="16sp"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:textColor="#3e3a3a"
+	    android:background="@drawable/container_dropshadow"
+	    />
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Plate Number"
+	    android:textSize="14sp"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:layout_marginTop="10dp"
+	    android:textColor="#be83db"
+	    />
+         <View 
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#be83db"
+          android:layout_marginTop="1dp"
+          android:layout_marginBottom="2dp"
+           android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          />
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Plate Number"
+	    android:id="@+id/plate_number"
+	    android:textSize="16sp"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:textColor="#3e3a3a"
+	    android:background="@drawable/container_dropshadow"
+	    />
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Vehicle Type"
+	    android:textSize="14sp"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:layout_marginTop="10dp"
+	    android:textColor="#be83db"
+	    />
+         <View 
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#be83db"
+          android:layout_marginTop="1dp"
+          android:layout_marginBottom="2dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          />
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Vehecle Type"
+	    android:id="@+id/vehicle_type"
+	    android:textSize="16sp"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:textColor="#3e3a3a"
+	    android:background="@drawable/container_dropshadow"
+	    />
+	<View 
+          android:layout_width="match_parent"
+          android:layout_height="5dp"
+          android:background="#fff"
+          />
+      <Button 
+          android:id="@+id/request_btn"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Request"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          />
+   
+    </LinearLayout>
+
+  </ScrollView>
+
+</RelativeLayout>

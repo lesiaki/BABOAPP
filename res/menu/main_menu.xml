@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- custom -->
+<!-- 	<item android:id="@+id/menu_search" android:showAsAction="ifRoom" -->
+<!-- 		android:title="@string/action_label_search" android:actionViewClass="android.widget.SearchView" /> -->
+	
+	<!-- icon -->
+	<item android:id="@+id/menu_star" android:showAsAction="ifRoom"
+		android:title="@string/action_label_text" 
+		android:icon="@drawable/ic_menu_star_holo_dark" />
+<!-- 		android:icon="@drawable/ic_menu_refresh_holo_light" /> -->
+	<!-- icon -->
+	<item android:id="@+id/menu_upgrade" android:showAsAction="ifRoom"
+		android:title="@string/action_label_text" 
+		android:icon="@drawable/ic_action_person" />
+<!-- 		android:icon="@drawable/ic_menu_refresh_holo_light" /> -->
+
+
+</menu>
